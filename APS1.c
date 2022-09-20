@@ -11,54 +11,54 @@ int retornar_maior_valor(int n, int res[]);
 int main()
 {
 
-    int vet_01[N], vet_02[N], vet_03[N], vet_04[N], vet_05[N];
-    int soma[5];   // soma = resultado da soma.
-    int resultado; // O maior resultado.
+    int Vetor_1[N], Vetor_2[N], Vetor_3[N], Vetor_4[N], Vetor_5[N];
+    int soma[5];   // soma = resultado.
+    int resultado; // O maior resultado da soma dos pares.
 
-    // Aqui resolvi imprimir os valores dos elementos.
+    
 
     printf("\n Primeiro Vetor: \n");
 
-    entrada_dados(vet_01);
-    imprimir_vetor(vet_01);
+    entrada_dados(Vetor_1);
+    imprimir_vetor(Vetor_1);
 
     printf("\n ....................");
 
     printf("\n \n Segundo Vetor: \n");
 
-    entrada_dados(vet_02);
-    imprimir_vetor(vet_02);
+    entrada_dados(Vetor_2);
+    imprimir_vetor(Vetor_2);
 
     printf("\n ....................");
 
     printf("\n \n Terceiro Vetor: \n");
 
-    entrada_dados(vet_03);
-    imprimir_vetor(vet_03);
+    entrada_dados(Vetor_3);
+    imprimir_vetor(Vetor_3);
 
     printf("\n ....................");
 
     printf("\n \n Quarto Vetor: \n");
 
-    entrada_dados(vet_04);
-    imprimir_vetor(vet_04);
+    entrada_dados(Vetor_4);
+    imprimir_vetor(Vetor_4);
 
     printf("\n ....................");
 
     printf("\n \n Quinto Vetor: \n");
 
-    entrada_dados(vet_05);
-    imprimir_vetor(vet_05);
+    entrada_dados(Vetor_5);
+    imprimir_vetor(Vetor_5);
 
     printf("\n ....................");
 
-    // Estou alocando os resultados.
+   
 
-    soma[0] = somar_numeros_recursivo(N - 1, vet_01);
-    soma[1] = somar_numeros_recursivo(N - 1, vet_02);
-    soma[2] = somar_numeros_recursivo(N - 1, vet_03);
-    soma[3] = somar_numeros_recursivo(N - 1, vet_04);
-    soma[4] = somar_numeros_recursivo(N - 1, vet_05);
+    soma[0] = somar_numeros_recursivo(N - 1, Vetor_1);
+    soma[1] = somar_numeros_recursivo(N - 1, Vetor_2);
+    soma[2] = somar_numeros_recursivo(N - 1, Vetor_3);
+    soma[3] = somar_numeros_recursivo(N - 1, Vetor_4);
+    soma[4] = somar_numeros_recursivo(N - 1, Vetor_5);
 
     resultado = retornar_maior_valor(5, soma);
 
